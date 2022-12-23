@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+/* General */
+
+body{
+    font-family: 'El Messiri', sans-serif;
+}
+
+.color-pink{
+    color: #EE295E;
+}
+
+
+/* Bootstrap */
+
+.carousel-item {
+    transition: transform 1.5s ease-in-out;
+}
+  
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2.5s;
+}
+
+.fs-50px{
+    font-size: 50px !important;
+}
+
+.pe-120px{
+    padding-right: 120px !important;
+}
+
+
+/* Header */
+
+.header-img{
+    height: 90vh;
+}
+
+.header-text{
+    top: 430px;
+    right: 15%;
+}
+
+.yellow-line{
+    position: relative;
+}
+
+.yellow-line::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+      z-index: 1;
+      background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .fs-sm-25px{
+        font-size: 25px !important;
+    }
+
+    .pe-sm-0{
+        padding-right: 0 !important;
+    }
+
+    .header-img{
+        object-fit: cover;
+        filter: blur(1px);
+    }
+
+    .header-text{
+        top: 530px;
+    }
+}
